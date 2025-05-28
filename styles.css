@@ -19,6 +19,7 @@ body {
     line-height: 1.6;
     color: var(--gold);
     background-color: var(--navy);
+    cursor: url('assets/cursor.png'), auto;
 }
 
 /* Container layout */
@@ -467,4 +468,24 @@ body {
     border-radius: 10px;
     margin: 2rem auto 0 auto;
     background: #222;
+}
+
+.spawned-logo {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.8s, transform 0.8s;
+    opacity: 1;
+    will-change: transform, opacity;
+}
+
+.confetti-piece {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 1;
+    will-change: transform, opacity;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 } 
